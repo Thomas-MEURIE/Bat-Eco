@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--gray-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.header__start {
+  display: flex;
+  align-items: center;
+}
+
+.header__end {
+  display: flex;
+}
+
+.header__search {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: inherit;
+  width: 80px;
+}

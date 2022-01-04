@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--gray-black);
+  color: var(--gray-600);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.footer a {
+  color: var(--gray-600);
+  text-decoration: none;
+}
+
+.footer__list {
+  display: flex;
+  gap: var(--space3x);
+}
+
+.footer__address {
+  font-style: normal;
+}
