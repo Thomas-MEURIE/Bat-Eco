@@ -15,71 +15,113 @@
 </head>
 <body>
     <header>
-
+        <div class="header__start">
+            <img class="logo" src="./assets/icon/logo-nom.svg" alt="Logo de Bat'Eco" width="150px" height="auto">
+            <div class="menu_button" x-on:click='openmenu();'><img src="./assets/icon/interface/icon_menu.svg" alt="Menu" width="42" height="auto"></div>
+        </div>
+        <div class="menu">
+            <div class="close_button"  x-on:click='closemenu();'><img src="./assets/icon/interface/icon_cross.svg" alt="Fermer le menu" width="42" height="auto"></div>
+            <ul>
+                <li><a href="index.html"><p class="menu_element">Acceuil</p></a></li>
+                <li><a href="batman.html"><p class="menu_element">Histoire de Batman</p></a></li>
+                <li><a href="pollution.html"><p class="menu_element">Pollution</p></a></li>
+                <li><a href="solution.html"><p class="menu_element">Solution</p></a></li>
+                <li><a href="galerie.html"><p class="menu_element">Galerie</p></a></li>
+                <li><a href="contact.html"><p class="menu_element">Contact</p></a></li>
+                <li><a href="a_propos.html"><p class="menu_element">A propos</p></a></li>
+            </ul>
+        </div>
     </header>
 
-    <div class="entete">
-        <img class="background-image" src="./assets/img/image-fond-accueil.png" alt="Fond du site">
-        <img src="./assets/img/IMAGE_LOGO.png" alt="Logo de Batman en vert">
-        <h1>DÉPLOIES TES<br>
-            SUPERS POUVOIRS !</h1>
-        <h5>Il n'y pas que les super-héros qui peuvent sauver le monde !</h5>
-        <img src="./assets/icon/interface/icon_arrow.svg" alt="Décendre">
-    </div>
-
-    <div>
-        <h2>Savais-tu que Batman était l'un des plus grands pollueurs du monde ?</h2>
-        <p>Pour lutter contre les forces du mal Batman<br>
-            utilise une variante de 23 gadgets. Il roule à<br>
-            bord de sa Batmobile pour aller à la<br>
-            rescousse des personnes en détresse.<br>
-            Paradoxalement, il cherche à sauver des<br>
-            vies et rétabli la paix mais il pollue et nuit<br>
-            gravement à la planète avec sa Batmobile et<br>
-            son matériel de haute technologie.</p>
-    </div>
-
-    <div class="Transition batman" x-on:click='batmantransition();'>
-        <img id="img1" class="batman_acceuil" src="./assets/img/image-batman-2.png"/>
-        <img id="img2" src="./assets/img/image-batman-3.png"/>
-    </div>
-
-    <div>
-        <h2>Nous te donnons toutes<br>
-            les clés pour devenir un<br>
-            super héros !</h2>
-        <div>
-            <img src="./assets/icon/interface/icone-histoire.svg" alt= "L'histoire de Batman">
-            <h2>L'histoire de Batman</h2>
-            <p>Paradoxalement, Batman cherche à<br>
-                sauver des vies et rétablir la paix mais il<br>
-                pollue et nuit gravement à la planète...</p><a href="./polution">
-            <a href=".batman.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
+    <div class="main_page">
+        <div class="entete_acceuil">
+            <img src="./assets/img/IMAGE_LOGO.png" alt="Logo de Batman en vert">
+            <h1>DÉPLOIES TES<br>
+                SUPERS POUVOIRS !</h1>
+            <h5>Il n'y pas que les super-héros qui peuvent sauver le monde !</h5>
+            <img src="./assets/icon/interface/icon_arrow.svg" alt="Décendre" color="white">
         </div>
+
         <div>
-            <img src="./assets/icon/interface/icone-environnement.svg" alt= "La pollution de la terre">
-            <h2>La pollution de la terre</h2>
-            <p>L'environnement ne fait que se détériorer<br>
-                au fil du temps à cause des véhicules.<br>
-                Bientôt la vie sur terre ne sera plus<br>
-                envisageable...</p>
-            <a href="./polution.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
+            <h2>Savais-tu que Batman était l'un des plus grands pollueurs du monde ?</h2>
+            <p>Pour lutter contre les forces du mal Batman<br>
+                utilise une variante de 23 gadgets. Il roule à<br>
+                bord de sa Batmobile pour aller à la<br>
+                rescousse des personnes en détresse.<br>
+                Paradoxalement, il cherche à sauver des<br>
+                vies et rétabli la paix mais il pollue et nuit<br>
+                gravement à la planète avec sa Batmobile et<br>
+                son matériel de haute technologie.</p>
         </div>
+
+        <div class="Transition batman" x-on:click='batmantransition();'>
+            <img id="img1" class="batman_acceuil-1" src="./assets/img/image-batman-2.png"/>
+            <img id="img2" class="batman_acceuil-2" src="./assets/img/image-batman-3.png"/>
+        </div>
+
         <div>
-            <img src="./assets/icon/interface/icone-solution.svg" alt= "L'histoire de Batman">
-            <h2>Comment sauver la planète</h2>
-            <p>Dans un futur proche vous pouvez<br>
-                devenir ce super-héros qui sauve nous<br>
-                sauvent des dangers qui nous</p>
-            <a href="./solution.html"><img src="./assets/icon/interface/bouton-solution.svg" alt= "En savoir plus"></a>
+            <h2>Nous te donnons toutes<br>
+                les clés pour devenir un<br>
+                super héros !</h2>
+            <div>
+                <img src="./assets/icon/icone-histoire.svg" alt= "L'histoire de Batman" class="illustration_articles">
+                <h2>L'histoire de Batman</h2>
+                <p>Paradoxalement, Batman cherche à<br>
+                    sauver des vies et rétablir la paix mais il<br>
+                    pollue et nuit gravement à la planète...</p><a href="./polution">
+                <a href="batman.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
+            </div>
+            <div>
+                <img src="./assets/icon/icone-environnement.svg" alt= "La pollution de la terre" class="illustration_articles">
+                <h2>La pollution de la terre</h2>
+                <p>L'environnement ne fait que se détériorer<br>
+                    au fil du temps à cause des véhicules.<br>
+                    Bientôt la vie sur terre ne sera plus<br>
+                    envisageable...</p>
+                <a href="polution.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
+            </div>
+            <div>
+                <img src="./assets/icon/icone-solution.svg" alt= "L'histoire de Batman" class="illustration_articles">
+                <h2>Comment sauver la planète</h2>
+                <p>Dans un futur proche vous pouvez<br>
+                    devenir ce super-héros qui sauve nous<br>
+                    sauvent des dangers qui nous</p>
+                <a href="solution.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
+            </div>
         </div>
-    </div>
-    <div class='autre_heros'>
-        
+        <div class='autre_heros'>
+            
+        </div>
     </div>
 
     <footer>
-
+        <div>
+            <h2>Ne rate aucune actu !</h2>
+            <form action='' method='get'>
+                <h3>Inscris-toi à la newsletter</h3><br>
+                <label for="email">Ton adresse mail</label><br>
+                <input id="email" name="email" type="email"><br>
+                <label for="nom">Ton nom</label><br>
+                <input id="nom" name="nom" type="text"><br>
+                <button>Je m'inscris</button>
+            </form>
+        </div>
+        <div>
+            <h2>BAT'ECO</h2>
+            <p>A propos de Bat'Eco</p><br>
+            <p>Nous contacter</p><br>
+            <h2>RUBRIQUES</h2><br>
+            <p>Histoire de Batman</p><br>
+            <p>Pollution de la terre</p><br>
+            <p>Comment sauver la planète</p><br>
+            <h2>SUIS-NOUS !</h2><br>
+            <ul>
+                <li><a href=""><img src="./assets/icon/logo-facebook.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="./assets/icon/logo-instagram.svg" alt="Instagram"></a></li>
+                <li><a href=""><img src="./assets/icon/logo-twitter.svg" alt="Twitter"></a></li>
+                <li><a href=""><img src="./assets/icon/logo-mmi-montbeliard.svg" alt="MMI Montbéliard"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,8 +1,8 @@
-.footer {
+footer {
+  color: var(--gray-white);
   background-color: var(--gray-black);
-  color: var(--gray-600);
-  padding-top: 64px;
-  padding-bottom: 64px;
+  background-clip: content-box;
+  margin: 0;
 }
 
 .footer a {
@@ -17,4 +17,19 @@
 
 .footer__address {
   font-style: normal;
+}
+
+footer div:first-child {
+  margin: 10px;
+  padding: -50px;
+  background-color: var(--bateco-green);
+  border: none;
+}
+
+footer div:last-child {
+  margin: 10px;
+}
+
+footer div:last-child h2 {
+  color: var(--bateco-green);
 }

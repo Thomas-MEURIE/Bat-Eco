@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
+
+    <title>Bat'Eco - Contact</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__start">
+            <a class="logo" href="index.html"><img src="./assets/icon/logo-nom.svg" alt="Logo de Bat'Eco" width="150px" height="auto"></a>
+            <div class="menu_button" x-on:click='openmenu();'><img src="./assets/icon/interface/icon_menu.svg" alt="Menu" width="42" height="auto"></div>
+        </div>
+        <div class="menu">
+            <div class="close_button"  x-on:click='closemenu();'><img src="./assets/icon/interface/icon_cross.svg" alt="Fermer le menu" width="42" height="auto"></div>
+            <ul>
+                <li class="menu_element"><a href="index.html"><p>Acceuil</p></a></li>
+                <li class="menu_curent"><a href="batman.html"><p>Histoire de Batman</p></a></li>
+                <li class="menu_element"><a href="pollution.html"><p>Pollution</p></a></li>
+                <li class="menu_element"><a href="solution.html"><p>Solution</p></a></li>
+                <li class="menu_element"><a href="galerie.html"><p>Galerie</p></a></li>
+                <li class="menu_element"><a href="contact.html"><p>Contact</p></a></li>
+                <li class="menu_element"><a href="a_propos.html"><p>A propos</p></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main_page">
+        <div class="entete">
+            <h3>Contact</h2>
+            <p>Si tu as besoin de plus d'information
+                n'hésite pas à nous envoyer un message.</p>
+            <form action='' method='get'>
+                <h3>Inscris-toi à la newsletter</h3><br>
+                <label for="nom-contact">Prénom</label><br>
+                <input id="nom-contact" name="nom" type="text"><br>
+                <label for="email-contact">Adresse mail</label><br>
+                <input id="email-contact" name="email" type="email"><br>
+                <label for="message">Prénom</label><br>
+                <input id="message" name="message" type="text"><br>
+                <button class="contact_envoi"><img src="./assets/icon/interface/bouton-envoyer-contact.svg" alt="Envoyer"></button>
+            </form>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>Ne rate aucune actu !</h2>
+            <form action='' method='get'>
+                <h3>Inscris-toi à la newsletter</h3><br>
+                <label for="email">Ton adresse mail</label><br>
+                <input id="email" name="email" type="email"><br>
+                <label for="nom">Ton nom</label><br>
+                <input id="nom" name="nom" type="text"><br>
+                <button>Je m'inscris</button>
+            </form>
+        </div>
+        <div>
+            <h2>BAT'ECO</h2>
+            <p>A propos de Bat'Eco</p><br>
+            <p>Nous contacter</p><br>
+            <h2>RUBRIQUES</h2><br>
+            <p>Histoire de Batman</p><br>
+            <p>Pollution de la terre</p><br>
+            <p>Comment sauver la planète</p><br>
+            <h2>SUIS-NOUS !</h2><br>
+            <ul>
+                <li><a href=""><img src="./assets/icon/logo-facebook.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="./assets/icon/logo-instagram.svg" alt="Instagram"></a></li>
+                <li><a href=""><img src="./assets/icon/logo-twitter.svg" alt="Twitter"></a></li>
+                <li><a href=""><img src="./assets/icon/logo-mmi-montbeliard.svg" alt="MMI Montbéliard"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
