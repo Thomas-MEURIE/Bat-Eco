@@ -22,13 +22,13 @@
         <div class="menu">
             <div class="close_button"  x-on:click='closemenu();'><img src="./assets/icon/interface/icon_cross.svg" alt="Fermer le menu" width="42" height="auto"></div>
             <ul>
-                <li><a href="index.html"><p class="menu_element">Acceuil</p></a></li>
-                <li><a href="batman.html"><p class="menu_element">Histoire de Batman</p></a></li>
-                <li><a href="pollution.html"><p class="menu_element">Pollution</p></a></li>
-                <li><a href="solution.html"><p class="menu_element">Solution</p></a></li>
-                <li><a href="galerie.html"><p class="menu_element">Galerie</p></a></li>
-                <li><a href="contact.html"><p class="menu_element">Contact</p></a></li>
-                <li><a href="a_propos.html"><p class="menu_element">A propos</p></a></li>
+                <li class="menu_curent"><a href="#"><p>Acceuil</p></a></li>
+                <li class="menu_element"><a href="batman.html"><p>Histoire de Batman</p></a></li>
+                <li class="menu_element"><a href="pollution.html"><p>Pollution</p></a></li>
+                <li class="menu_element"><a href="solution.html"><p>Solution</p></a></li>
+                <li class="menu_element"><a href="galerie.html"><p>Galerie</p></a></li>
+                <li class="menu_element"><a href="contact.html"><p>Contact</p></a></li>
+                <li class="menu_element"><a href="a_propos.html"><p>À propos</p></a></li>
             </ul>
         </div>
     </header>
@@ -42,49 +42,48 @@
             <img src="./assets/icon/interface/icon_arrow.svg" alt="Décendre" color="white">
         </div>
 
-        <div>
+        <div class="text_cetered">
             <h2>Savais-tu que Batman était l'un des plus grands pollueurs du monde ?</h2>
-            <p>Pour lutter contre les forces du mal Batman<br>
-                utilise une variante de 23 gadgets. Il roule à<br>
-                bord de sa Batmobile pour aller à la<br>
-                rescousse des personnes en détresse.<br>
-                Paradoxalement, il cherche à sauver des<br>
-                vies et rétabli la paix mais il pollue et nuit<br>
-                gravement à la planète avec sa Batmobile et<br>
-                son matériel de haute technologie.</p>
+            <p>Pour lutter contre les forces du mal Batman
+                utilise une variante de 23 gadgets. Il roule à
+                bord de sa Batmobile pour aller à la
+                rescousse des personnes en détresse.
+                Paradoxalement, il cherche à sauver des
+                vies et rétabli la paix mais il pollue et nuit
+                gravement à la planète avec sa Batmobile et
+                son matériel de haute technologie.
         </div>
 
-        <div class="Transition batman" x-on:click='batmantransition();'>
+        <div class="Transition batman">
             <img id="img1" class="batman_acceuil-1" src="./assets/img/image-batman-2.png"/>
-            <img id="img2" class="batman_acceuil-2" src="./assets/img/image-batman-3.png"/>
         </div>
 
         <div>
-            <h2>Nous te donnons toutes<br>
-                les clés pour devenir un<br>
+            <h2>Nous te donnons toutes
+                les clés pour devenir un
                 super héros !</h2>
-            <div>
+            <div class="text_cetered">
                 <img src="./assets/icon/icone-histoire.svg" alt= "L'histoire de Batman" class="illustration_articles">
                 <h2>L'histoire de Batman</h2>
-                <p>Paradoxalement, Batman cherche à<br>
-                    sauver des vies et rétablir la paix mais il<br>
+                <p>Paradoxalement, Batman cherche à
+                    sauver des vies et rétablir la paix mais il
                     pollue et nuit gravement à la planète...</p><a href="./polution">
                 <a href="batman.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
             </div>
-            <div>
+            <div class="text_cetered">
                 <img src="./assets/icon/icone-environnement.svg" alt= "La pollution de la terre" class="illustration_articles">
                 <h2>La pollution de la terre</h2>
-                <p>L'environnement ne fait que se détériorer<br>
-                    au fil du temps à cause des véhicules.<br>
-                    Bientôt la vie sur terre ne sera plus<br>
+                <p>L'environnement ne fait que se détériorer
+                    au fil du temps à cause des véhicules.
+                    Bientôt la vie sur terre ne sera plus
                     envisageable...</p>
-                <a href="polution.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
+                <a href="pollution.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
             </div>
-            <div>
+            <div class="text_cetered">
                 <img src="./assets/icon/icone-solution.svg" alt= "L'histoire de Batman" class="illustration_articles">
                 <h2>Comment sauver la planète</h2>
-                <p>Dans un futur proche vous pouvez<br>
-                    devenir ce super-héros qui sauve nous<br>
+                <p>Dans un futur proche vous pouvez
+                    devenir ce super-héros qui sauve nous
                     sauvent des dangers qui nous</p>
                 <a href="solution.html"><img src="./assets/icon/interface/bouton-accueil.svg" alt= "En savoir plus"></a>
             </div>
@@ -94,11 +93,11 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="text_left">
         <div>
-            <h2>Ne rate aucune actu !</h2>
+            <h2 class="text_left">Ne rate aucune actu !</h2>
             <form action='' method='get'>
-                <h3>Inscris-toi à la newsletter</h3><br>
+                <h3 class="text_left">Inscris-toi à la newsletter</h3><br>
                 <label for="email">Ton adresse mail</label><br>
                 <input id="email" name="email" type="email"><br>
                 <label for="nom">Ton nom</label><br>
@@ -107,14 +106,14 @@
             </form>
         </div>
         <div>
-            <h2>BAT'ECO</h2>
+            <h2 class="text_left">BAT'ECO</h2>
             <p>A propos de Bat'Eco</p><br>
             <p>Nous contacter</p><br>
-            <h2>RUBRIQUES</h2><br>
+            <h2 class="text_left">RUBRIQUES</h2><br>
             <p>Histoire de Batman</p><br>
             <p>Pollution de la terre</p><br>
             <p>Comment sauver la planète</p><br>
-            <h2>SUIS-NOUS !</h2><br>
+            <h2 class="text_left">SUIS-NOUS !</h2><br>
             <ul>
                 <li><a href=""><img src="./assets/icon/logo-facebook.svg" alt="Facebook"></a></li>
                 <li><a href=""><img src="./assets/icon/logo-instagram.svg" alt="Instagram"></a></li>

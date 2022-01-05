@@ -57,15 +57,23 @@
   flex-direction: row;
   background-color: var(--bateco-green);
   width: 100%;
-  padding: -30px 0 0 40px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
-.menu_curent {
+.menu li {
   width: 100%;
-  background-color: var(--bateco-dark-blue);
-  padding: -30px 0 0 40px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
 }
 
 .menu p {
-  margin: 0px;
+  margin: 20px;
+}
+.menu_curent {
+  background-color: var(--bateco-dark-blue);
 }

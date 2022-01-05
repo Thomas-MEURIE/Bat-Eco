@@ -22,7 +22,6 @@ h1 {
   font-size: var(--title-xl);
   color: var(--bateco-green);
   margin: 50px;
-  text-align: center;
 }
 
 h1, h2, h3 {
@@ -45,15 +44,25 @@ h3 {
 
 h4 {
   font-size: var(--text-button);
+  text-align: center;
 }
 
 h5 {
   font-size: var(--text-l);
+  text-align: center;
 }
 
 .container {
   padding-left: var(--space3x);
   padding-right: var(--space3x);
+}
+
+.text_cetered {
+  text-align: center;
+}
+
+.text_left {
+  text-align: left;
 }
 
 .listUnstyled {
@@ -63,6 +72,7 @@ h5 {
 }
 
 .entete_acceuil {
+  text-align: center;
   width: 100%;
   padding: 30px 0 50px 0;
   background-image: url("../../../assets/img/image-fond-accueil.png");

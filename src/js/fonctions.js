@@ -1,17 +1,3 @@
-function batmantransition() {
-    let bat = document.querySelector('.batman_acceuil-1');
-    console.log('yes');
-    let O = bat.attributes.opacity
-
-    return anime({
-        targets: '.batman_acceuil-1',
-        opacity: [O,1-O],
-        duration: 300,
-        easing: 'linear',
-        autoplay: false,
-    }).play;
-}
-
 function openmenu() {
     return anime({
         targets: '.menu',
